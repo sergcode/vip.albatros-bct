@@ -4,13 +4,10 @@
 
 ---
 
-
-
 #### **Режим разработки:**
 
 #### *gulp dev*
 
-
 #### **Версия для production**
 
-#### *gulp build
+#### *gulp build*
