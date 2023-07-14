@@ -1,0 +1,86 @@
+mixin novosibirsk-tabs
+  - var wayDirectory = 'Novosibirsk/Mercedes-Benz_'
+
+  #novosibirsk.tab-pane.tariffs-political__tab-pane.fade(role="tabpanel")
+    .tab-content.tariffs-political__carousel-wrapper
+      #MercedesBenzSclassW222MaybachNov.tab-pane.fotorama.fotorama__tariffs-political.fade.show.active(data-auto="false" data-thumbwidth="101" data-thumbheight="101" data-thumbmargin='30' role="tabpanel" aria-labelledby="novosibirskHeadingOne")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222_Maybach/1.jpg" data-caption="Mercedes-Benz S class W222 Maybach")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222_Maybach/2.jpg" data-caption="Mercedes-Benz S class W222 Maybach")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222_Maybach/3.jpg" data-caption="Mercedes-Benz S class W222 Maybach")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222_Maybach/4.jpg" data-caption="Mercedes-Benz S class W222 Maybach")
+
+      #MercedesBenzSclassW222Nov.tab-pane.fotorama.fotorama__tariffs-political.fade(data-auto="false" role="tabpanel" data-thumbwidth="101" data-thumbheight="101" data-thumbmargin='30' aria-labelledby="novosibirskHeadingTwo")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222/1.jpg" data-caption="Mercedes-Benz S class W222")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222/2.jpg" data-caption="Mercedes-Benz S class W222")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222/3.jpg" data-caption="Mercedes-Benz S class W222")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222/4.jpg" data-caption="Mercedes-Benz S class W222")
+
+      #MercedesBenzEclassW213Nov.tab-pane.fotorama.fotorama__tariffs-political.fade(data-auto="false" role="tabpanel" data-thumbwidth="101" data-thumbheight="101" data-thumbmargin='30' aria-labelledby="novosibirskHeadingThree")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/1.jpg" data-caption="Mercedes-Benz E class W213")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/2.jpg" data-caption="Mercedes-Benz E class W213")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/3.jpg" data-caption="Mercedes-Benz E class W213")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/4.jpg" data-caption="Mercedes-Benz E class W213")
+
+      #MercedesBenzVclassNov.tab-pane.fotorama.fotorama__tariffs-political.fade(data-auto="false" role="tabpanel" data-thumbwidth="101" data-thumbheight="101" data-thumbmargin='30' aria-labelledby="novosibirskHeadingFour")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/1.jpg" data-caption="Mercedes-Benz V class")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/2.jpg" data-caption="Mercedes-Benz V class")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/3.jpg" data-caption="Mercedes-Benz V class")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/4.jpg" data-caption="Mercedes-Benz V class")
+        img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/5.jpg" data-caption="Mercedes-Benz V class")
+
+    .tariffs-political__information
+      ul#accordionTariffsPoliticalNovosibirsk.nav.tariffs-political__accordion(role="tablist")
+
+        li.nav-item.tariffs-political__card
+          a#novosibirskHeadingOne.nav-link.tariffs-political__card-header.active(data-toggle="tab" href="#MercedesBenzSclassW222MaybachNov" role="tab" aria-controls="tabMercedesBenzSclassW222MaybachNov" aria-selected="true")
+            h2
+              button(type="button" data-target="#novosibirskCollapseOne" data-toggle="collapse" aria-expanded="true" aria-controls="novosibirskCollapseOne")
+                | Mercedes-Benz S class W222 Maybach
+          #novosibirskCollapseOne.collapse.show.tariffs-political__collapse(aria-labelledby="novosibirskHeadingOne" data-parent="#accordionTariffsPoliticalNovosibirsk")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+        li.nav-item.tariffs-political__card
+          a#novosibirskHeadingTwo.nav-link.tariffs-political__card-header(data-toggle="tab" href="#MercedesBenzSclassW222Nov" role="tab" aria-controls="MercedesBenzSclassW222Nov" aria-selected="false")
+            h2
+              button.collapsed(type="button" data-toggle="collapse" data-target="#novosibirskCollapseTwo" aria-expanded="false" aria-controls="novosibirskCollapseTwo")
+                | Mercedes-Benz S class W222
+          #novosibirskCollapseTwo.collapse.tariffs-political__collapse(aria-labelledby="novosibirskHeadingTwo" data-parent="#accordionTariffsPoliticalNovosibirsk")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+        li.nav-item.tariffs-political__card
+          a#novosibirskHeadingThree.nav-link.tariffs-political__card-header(data-toggle="tab" href="#MercedesBenzEclassW213Nov" role="tab" aria-controls="MercedesBenzEclassW213Nov" aria-selected="false")
+            h2
+              button.collapsed(type="button" data-toggle="collapse" data-target="#novosibirskCollapseThree" aria-expanded="false" aria-controls="novosibirskCollapseThree")
+                | Mercedes-Benz E class W213
+          #novosibirskCollapseThree.collapse.tariffs-political__collapse(aria-labelledby="novosibirskHeadingThree" data-parent="#accordionTariffsPoliticalNovosibirsk")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+        li.nav-item.tariffs-political__card.tariffs-political__card_mb-40
+          a#novosibirskHeadingFour.nav-link.tariffs-political__card-header(data-toggle="tab" href="#MercedesBenzVclassNov" role="tab" aria-controls="MercedesBenzVclassNov" aria-selected="false")
+            h2
+              button.collapsed(type="button" data-toggle="collapse" data-target="#novosibirskCollapseFour" aria-expanded="false" aria-controls="novosibirskCollapseFour")
+                | Mercedes-Benz V class
+          #novosibirskCollapseFour.collapse.tariffs-political__collapse(aria-labelledby="novosibirskHeadingFour" data-parent="#accordionTariffsPoliticalNovosibirsk")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+      +button-middle-gold-bg('button__animation-glare button__animation-glare_delay-1', 'button', 'Заказать автомобиль', 'button', 'modal', '#modalConsultation')

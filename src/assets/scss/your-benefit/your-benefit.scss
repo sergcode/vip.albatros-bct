@@ -1,0 +1,39 @@
+.your-benefit {
+  background-color: $white-one;
+  padding-bottom: 43px;
+  &__grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-content: flex-start;
+    width: 100%;
+    @media only screen and (max-width: 1599.98px) {
+      grid-template-columns: repeat(3,1fr);
+    }
+    @media only screen and (max-width: 767.98px) {
+      grid-template-columns: repeat(2,1fr);
+    }
+    @media only screen and (max-width: 440px) {
+      grid-template-columns: 1fr;
+    }
+    article {
+      @media only screen and (max-width: 1599.98px) {
+        padding: 0 50px;
+      }
+      @media only screen and (max-width: 1023.98px) {
+        padding: 0;
+      }
+
+      figure {
+        @media only screen and (max-width: 1599.98px) {
+          padding-bottom: 53px;
+        }
+        svg {
+          margin-bottom: 30px;
+        }
+        text-align: center;
+      }
+    }
+  }
+}

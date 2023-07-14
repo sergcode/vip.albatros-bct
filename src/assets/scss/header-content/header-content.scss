@@ -1,0 +1,273 @@
+.header-content {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 600px;
+  @include flex-center-wrap();
+  z-index: 0;
+  padding-top: 200px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 0px) and (max-width: 319.98px) {
+    background: url("#{$way-img}header-content/background-320.jpg") no-repeat center / cover;
+    height: 100%;
+    min-height: 560px;
+    max-height: 560px;
+    padding-top: 80px;
+    display: block;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 479.98px) {
+    background: url("#{$way-img}header-content/background-576.jpg") no-repeat center top / cover;
+    height: 100%;
+    min-height: 523px;
+    max-height: 523px;
+    padding-top: 80px;
+    display: block;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 575.98px) {
+    background: url("#{$way-img}header-content/background-576.jpg") no-repeat center top / cover;
+    height: 100%;
+    min-height: 352px;
+    max-height: 352px;
+    padding-top: 105px;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    background: url("#{$way-img}header-content/background-768.jpg") no-repeat center / cover;
+    padding-top: 131px;
+    height: 100%;
+    min-height: 469px;
+    max-height: 469px;
+    align-content: flex-start;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    background: url("#{$way-img}header-content/background-992.jpg") no-repeat left 75% top / cover;
+    overflow: visible;
+    padding-top: 152px;
+    height: 100%;
+    min-height: 606px;
+    max-height: 606px;
+    align-content: flex-start;
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1023.98px) {
+    background: url("#{$way-img}header-content/background-1024.jpg") no-repeat center / cover;
+    overflow: visible;
+    padding-top: 185px;
+    height: 100%;
+    min-height: 781px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279.98px) {
+    background: url("#{$way-img}header-content/background-1280.jpg") no-repeat center / cover;
+    padding-top: 185px;
+    height: 100%;
+    min-height: 781px;
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1599.98px) {
+    background: url("#{$way-img}header-content/background-1600.jpg") no-repeat center/ cover;
+    height: 100%;
+    min-height: 1001px;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1920px) {
+    background: url("#{$way-img}header-content/background-1920.jpg") no-repeat center/ cover;
+    height: 100vh;
+  }
+
+  @media screen and (min-width: 1920.98px) {
+    background: url("#{$way-img}header-content/background-1920.jpg") no-repeat center / cover;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-bottom: 50px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black-rgba-three;
+    background-image: url("#{$way-img}header-content/map.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+  }
+
+  &__main {
+
+    color: $white-one;
+    position: relative;
+    width: 100%;
+
+  }
+
+  &__main-block {
+
+    position: relative;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    display: grid;
+    height: 100%;
+
+    @media screen and (max-width: 1599.98px) {
+      min-height: 653px;
+    }
+
+    @media screen and (max-width: 1279.98px) {
+      min-height: 538px;
+    }
+
+    @media screen and (max-width: 991.98px) {
+      margin-bottom: 5rem;
+      min-height: auto;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      height: auto;
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 479.98px) {
+      padding-top: 0;
+      width: 100%;
+      display: block;
+    }
+
+    .button__middle_blue {
+
+      @media screen and (max-width: 992px) {
+        display: flex;
+      }
+
+      @media screen and (max-width: 576px) {
+        margin: auto;
+      }
+
+    }
+
+    .button {
+      @media screen and (max-width: 991.98px) {
+        margin-bottom: 135px;
+      }
+      @media screen and (max-width: 767.98px) {
+        margin-bottom: 56px;
+      }
+      @media screen and (max-width: 575.98px) {
+        margin-bottom: 37px;
+      }
+      @media screen and (max-width: 479.98px) {
+        margin: 0 auto 37px;
+      }
+    }
+
+  }
+
+  &__number-block {
+
+    position: relative;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    margin-top: auto;
+    padding-bottom: 16rem;
+    width: 100%;
+
+    @media screen and (max-width: 1280px) {
+      padding-bottom: 10rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding-bottom: 7rem;
+    }
+
+    @media screen and (max-width: 576px) {
+      padding-bottom: 4rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+
+    &_col-custom {
+
+      flex: 0 0 20%;
+      max-width: 20%;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      @media screen and (max-width: 1640px) {
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+
+      @media screen and (max-width: 1280px) {
+        flex: 0 0 23%;
+        max-width: 23%;
+      }
+
+      @media screen and (max-width: 1024px) {
+        flex: 0 0 33.33333333%;
+        max-width: 33.33333333%;
+      }
+
+    }
+
+  }
+
+  &__iframe {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+  }
+
+  &__video {
+
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+
+  }
+
+
+  &__arrow-down {
+
+    position: relative;
+    margin-right: 4rem;
+    padding-top: 1rem;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+
+  }
+
+  &__arrow-down-text {
+
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    display: inline-flex;
+
+  }
+
+}

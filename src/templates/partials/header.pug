@@ -1,0 +1,55 @@
+header.header.scrolling-navbar.header__line-gold
+  .container.container__customized_xl
+    nav.nav-menu(role='navigation')
+      .row.justify-content-between
+        .col.nav-menu__logo_col-xl.nav-menu__logo_align-center
+          a.nav-menu__logo(href='#header' role='banner')
+            +logo-header
+        .col.nav-menu__col-xl.nav-menu__block
+          .nav-menu__collapse
+            ul.magicLine.nav-menu__menu
+              li.nav-menu__menu_item
+                a(href='#classAuto' title='' role='link') Классы авто
+
+              li.nav-menu__menu_item
+                a(href='#tariffsPolitical' title='' role='link') Города и страны
+
+              li.nav-menu__menu_item
+                a(href='#ourService' title='' role='link') Сервис
+
+              li.nav-menu__menu_item
+                a(href='#reviews' title='' role='link') Отзывы
+
+              li.nav-menu__menu_item
+                a(href='#activity' title='' role='link') Мероприятия
+
+              li.nav-menu__menu_item.nav-menu__menu_mr-15
+                a(href='#footer' title='' role='link') Контакты
+
+              li.nav-menu__menu_item.nav-menu__menu_hidden.active
+                a(title='' role='link')
+
+
+            ul.nav-menu__menu.nav-menu__menu_phones
+              li.nav-menu__menu_item
+                +phone-small
+                a.telephone(href='tel:+78002004017' title='Сделать звонок' role='link') +7-800-200-4017
+            .button__lang.button__lang_mobile
+              a.button__lang_ru.active(href='/' title='' role='link') RU
+                span.button__lang_white &nbsp;/&nbsp;
+              a.button__lang_en(href='/' title='Английская версия' role='link') EN
+            .nav-menu__button-collapse
+
+          a.button.button__middle.button__middle_header.button__gold-border.button__animation-right.button__ml-auto.button__animation-glare(role='link' href='tel:88002501717' title='Позвонить')
+            p
+              +phone-white
+              | +7 (800) 250-17-17
+              small 24/7
+          .button__lang
+            a.button__lang_ru.active(href='/' title='' role='link') RU
+              span.button__lang_white &nbsp;/&nbsp;
+            a.button__lang_en(href='/' title='Английская версия' role='link') EN
+          .nav-menu__button-collapse
+            button.hamburger.hamburger--spring(type='button' title='Открыть меню' role='button')
+              span.hamburger-box
+                span.hamburger-inner

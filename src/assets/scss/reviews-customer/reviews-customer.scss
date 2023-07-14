@@ -1,0 +1,54 @@
+.reviews-customer {
+  background: url("#{$way-img}reviews-customer/reviews-customer.jpg") no-repeat center / cover;
+  .container {
+    @media only screen and (max-width: 479.98px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  h2, h5 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .button__big {
+    @media only screen and (max-width: 575.98px) {
+      font-size: 18px;
+      height: 60px;
+      min-height: 60px;
+      max-height: 60px;
+    }
+    p {
+      padding: 0 50px;
+    }
+    span {
+      @media only screen and (max-width: 575.98px) {
+        width: 43px;
+        max-width: 43px;
+        height: 43px;
+        min-height: 43px;
+        max-height: 43px;
+      }
+      svg {
+        @media only screen and (max-width: 575.98px) {
+          width: 20px;
+          height: 14px;
+        }
+      }
+    }
+  }
+  .delimiter-five-stars__mb-74 {
+    @media only screen and (max-width: 991.98px) {
+      margin-bottom: 34px;
+    }
+  }
+  .button__big {
+    p {
+      span {
+        @media only screen and (max-width: 479.98px) {
+          display: none;
+        }
+      }
+
+    }
+  }
+}

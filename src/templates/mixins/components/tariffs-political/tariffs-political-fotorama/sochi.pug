@@ -1,0 +1,118 @@
+mixin sochi-fotorama
+  - var wayDirectory = 'Sochi/Mercedes-Benz_'
+
+  #sochiFotorama.tab-pane.fade(role="tabpanel" aria-labelledby="sochiSelectTab")
+
+    ul.nav-pills
+      li.dropdown
+        a.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Выберите город
+        .dropdown-menu
+          .nav.nav-tabs(role="tablist")
+            a#moscowSelectTab(role="tab" data-toggle='tab' href='#moscowFotorama' aria-controls="moscowFotorama" aria-selected="false") Москва
+            a#petersburgSelectTab(role="tab" data-toggle='tab' href='#petersburgFotorama' aria-controls="petersburgFotorama" aria-selected="false") Санкт-Петербург
+            a#sochiSelectTab.active(role="tab" data-toggle='tab' href='#sochiFotorama' aria-controls="sochiFotorama" aria-selected="true") Сочи
+            a#novosibirskSelectTab(role="tab" data-toggle='tab' href='#novosibirskFotorama' aria-controls="novosibirskFotorama" aria-selected="false") Новосибирск
+            a#vladivostokSelectTab(role="tab" data-toggle='tab' href='#vladivostokFotorama' aria-controls="vladivostokFotorama" aria-selected="false") Владивосток
+
+      li.dropdown
+        a.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Выберите класс авто
+        .dropdown-menu
+          .nav.nav-tabs(role="tablist")
+            a#sClassW222MaybachSochi.active(role="tab" data-toggle='tab' href='#mercedesSclassW222MaybachSochi' aria-controls="mercedesSclassW222MaybachSochi" aria-selected="true") Mercedes-Benz S class W222 Maybach
+            a#sClassW222Sochi(role="tab" data-toggle='tab' href='#mercedesSclassW222Sochi' aria-controls="mercedesSclassW222Sochi" aria-selected="false") Mercedes-Benz S class W222
+            a#eClassW213Sochi(role="tab" data-toggle='tab' href='#mercedesEclassW213Sochi' aria-controls="mercedesEclassW213Sochi" aria-selected="false") Mercedes-Benz E class W213
+            a#vClassSochi(role="tab" data-toggle='tab' href='#mercedesVclassSochi' aria-controls="mercedesVclassSochi" aria-selected="false") Mercedes-Benz V class
+
+    .tab-content
+      #mercedesSclassW222MaybachSochi.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="sClassW222MaybachSochi")
+        .fotorama.fotorama__tariffs-political(data-auto="false" data-thumbwidth="101" data-thumbheight="101" data-thumbmargin='30')
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222_Maybach/1.jpg" data-caption="Mercedes-Benz S class W222 Maybach")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222_Maybach/2.jpg" data-caption="Mercedes-Benz S class W222 Maybach")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222_Maybach/3.jpg" data-caption="Mercedes-Benz S class W222 Maybach")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222_Maybach/4.jpg" data-caption="Mercedes-Benz S class W222 Maybach")
+
+        .tariffs-political__fotorama_info
+          p
+            | Доступно для заказа:
+            br
+            | 27 автомобилей
+          p
+            | Год выпуска:
+            br
+            | 2019 г. | 2018 г. | 2017 г.
+          ul
+            li AMG пакет
+            li ЖК панель
+            li Панорамная крыша
+
+      #mercedesSclassW222Sochi.tab-pane.fade(role="tabpanel" aria-labelledby="sClassW222Sochi")
+        .fotorama.fotorama__tariffs-political(data-auto="false" data-thumbwidth="101" data-thumbheight="101" data-thumbmargin='30')
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222/1.jpg" data-caption="Mercedes-Benz S class W222")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222/2.jpg" data-caption="Mercedes-Benz S class W222")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222/3.jpg" data-caption="Mercedes-Benz S class W222")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222/4.jpg" data-caption="Mercedes-Benz S class W222")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "S_class_W222/5.jpg" data-caption="Mercedes-Benz S class W222")
+
+        .tariffs-political__fotorama_info
+          p
+            | Доступно для заказа:
+            br
+            | 27 автомобилей
+          p
+            | Год выпуска:
+            br
+            | 2019 г. | 2018 г. | 2017 г.
+          ul
+            li AMG пакет
+            li ЖК панель
+            li Панорамная крыша
+
+      #mercedesEclassW213Sochi.tab-pane.fade(role="tabpanel" aria-labelledby="eClassW213Sochi")
+        .fotorama.fotorama__tariffs-political(data-auto="false" data-thumbwidth="101" data-thumbheight="101" data-thumbmargin='30')
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/1.jpg" data-caption="Mercedes-Benz E class W213")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/2.jpg" data-caption="Mercedes-Benz E class W213")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/3.jpg" data-caption="Mercedes-Benz E class W213")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/4.jpg" data-caption="Mercedes-Benz E class W213")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/5.jpg" data-caption="Mercedes-Benz E class W213")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "E_class_W213/6.jpg" data-caption="Mercedes-Benz E class W213")
+
+        .tariffs-political__fotorama_info
+          p
+            | Доступно для заказа:
+            br
+            | 27 автомобилей
+          p
+            | Год выпуска:
+            br
+            | 2019 г. | 2018 г. | 2017 г.
+          ul
+            li AMG пакет
+            li ЖК панель
+            li Панорамная крыша
+
+      #mercedesVclassSochi.tab-pane.fade(role="tabpanel" aria-labelledby="vClassSochi")
+        .fotorama.fotorama__tariffs-political(data-auto="false" data-thumbwidth="101" data-thumbheight="101" data-thumbmargin='30')
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/1.jpg" data-caption="Mercedes-Benz V class")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/2.jpg" data-caption="Mercedes-Benz V class")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/3.jpg" data-caption="Mercedes-Benz V class")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/4.jpg" data-caption="Mercedes-Benz V class")
+          img(src=pathAssetsImg + "tariffs-political/" + wayDirectory + "V_class/5.jpg" data-caption="Mercedes-Benz V class")
+
+        .tariffs-political__fotorama_info
+          p
+            | Доступно для заказа:
+            br
+            | 27 автомобилей
+          p
+            | Год выпуска:
+            br
+            | 2019 г. | 2018 г. | 2017 г.
+          ul
+            li AMG пакет
+            li ЖК панель
+            li Панорамная крыша
+
+      +button-middle-gold-bg('button__animation-glare button__animation-glare_delay-1', 'button', 'Заказать автомобиль', 'button', 'modal', '#modalConsultation')
+
+
+

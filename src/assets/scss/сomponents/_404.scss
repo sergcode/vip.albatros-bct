@@ -1,0 +1,146 @@
+.body {
+
+  &__404 {
+
+    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    @media only screen and (max-width: 992px) {
+      height: 100%;
+    }
+
+  }
+
+}
+
+.main {
+
+  &__404 {
+
+    height: 100%;
+    position: relative;
+    background-image: url("#{$static-404}404-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $white-one;
+    //visibility: hidden;
+
+    @media only screen and (max-width: 1450px) {
+      background-position: 70% 0;
+    }
+
+    @media only screen and (max-width: 1270px) {
+      background-position: 60% 0;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      background-position: 50% 0;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      background-position: 50% 0;
+    }
+
+    @media only screen and (max-width: 992px) {
+      visibility: visible;
+      background-position: 50% 0;
+    }
+
+    @media only screen and (max-width: 850px) {
+      background-position: 60% 0;
+    }
+
+    @media only screen and (max-width: 670px) {
+      background-position: 65% 0;
+    }
+
+    @media only screen and (max-width: 450px) {
+      background-position: 70% 0;
+    }
+
+  }
+
+}
+
+.content-404 {
+
+  position: relative;
+  width: 100%;
+  padding-top: 70px;
+  text-align: center;
+
+  @media only screen and (max-width: 992px) {
+    padding-bottom: 480px;
+  }
+
+  @media only screen and (max-width: 670px) {
+    padding-bottom: 380px;
+  }
+
+  &__wrapper {
+
+    position: relative;
+    max-width: 100%;
+
+    img {
+      width: 327px;
+      height: 172px;
+      margin-bottom: 47.82px;
+      @media only screen and (max-width: 992px) {
+        visibility: visible;
+        width: 327px - 65px;
+        height: 172px - 45px;
+      }
+      @media only screen and (max-width: 500px) {
+        visibility: visible;
+        width: 327px - 105px;
+        height: 172px - 65px;
+      }
+      @media only screen and (max-width: 400px) {
+        visibility: visible;
+        width: 327px - 135px;
+        height: 172px - 75px;
+      }
+
+    }
+
+  }
+
+  &__title {
+
+    font-family: $francker-cyr-cond-medium;
+    font-size: 27.22px;
+    line-height: 1.5em;
+    color: $black-four;
+    margin-bottom: 32px;
+    display: block;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: 768px) {
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 300px) {
+      font-size: 18px;
+    }
+
+    span {
+      font-family: $francker-cyr-cond-light;
+    }
+
+  }
+
+}
+

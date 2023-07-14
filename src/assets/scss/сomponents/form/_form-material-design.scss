@@ -1,0 +1,105 @@
+.form-material-design {
+
+  display: block;
+  grid-column: 2;
+  z-index: 1000;
+
+  @media only screen and (max-width: 767.98px) {
+    grid-column: 1;
+  }
+
+  fieldset {
+    padding: 0 0 0 0;
+  }
+
+  .form-control:focus, .form-control:active {
+    border-color: $gold-one;
+    box-shadow: none;
+  }
+
+  &__form {
+
+    .form-row {
+
+      .invalid-tooltip {
+
+        width: 40%;
+
+        @media only screen and (max-width: 991.98px) {
+          width: 50%;
+        }
+
+        @media only screen and (max-width: 920px) {
+          transform: translate(0, -130px);
+          left: 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        @media only screen and (max-width: 479.98px) {
+          transform: translate(0, 0);
+          text-align: left;
+        }
+
+        &:before {
+
+          @media only screen and (max-width: 920px) {
+            display: none;
+          }
+
+        }
+
+
+      }
+
+    }
+
+    .was-validated {
+
+      .form-control:invalid ~ .invalid-tooltip {
+
+        @media only screen and (max-width: 920px) {
+          transform: translate(0, 35px);
+        }
+
+      }
+
+    }
+
+  }
+
+  .button {
+    @media only screen and (max-width: 767.98px) {
+      font-size: 18px;
+      height: 60px;
+      min-height: 60px;
+      max-height: 60px;
+    }
+    @media only screen and (max-width: 479.98px) {
+      width: 100%;
+      max-width: 100%;
+    }
+    p {
+      @media only screen and (max-width: 767.98px) {
+        margin-right: 30px;
+      }
+    }
+    span {
+      @media only screen and (max-width: 767.98px) {
+        width: 43px;
+        max-width: 43px;
+        height: 43px;
+        min-height: 43px;
+        max-height: 43px;
+      }
+      svg {
+        @media only screen and (max-width: 767.98px) {
+          width: 23px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+}
+

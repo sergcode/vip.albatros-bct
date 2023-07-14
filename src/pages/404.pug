@@ -1,0 +1,24 @@
+extends ../templates/layouts/default-404
+
+block vars
+  -
+    static404 = "https://static.e-trans.me/vip.albatros-bct/img/404/"
+
+block content
+  .main.main__404.wow.fadeIn(role='main', data-wow-delay='0', data-wow-duration='0.4')
+    .container.container__customized_xl.container__customized_404
+      section.content-404
+        h7.content-404__title.wow.fadeInUp(data-wow-delay='0.5' data-wow-duration='0.4')
+          | Ошибка 404:&nbsp;
+          span cтраница не найдена
+        .content-404__wrapper
+          img.wow.fadeInUp(src=static404+'404.png' data-wow-delay='0.5' data-wow-duration='0.4')
+
+        +button-middle-gold-border-link('', 'button__middle_404 button__gold-border_delay-05 button__gold-border_gold-text', 'button', 'На главную',  '/')
+
+
+
+
+
+
+

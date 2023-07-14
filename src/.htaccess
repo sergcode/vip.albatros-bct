@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.vip.albatroc\.com$ [NC]
+RewriteRule ^(.*)$ http://vip.albatros-bct.com/$1 [R=301,L]
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Protocol} !=https
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+ErrorDocument 404 https://vip.albatros-bct.com/404.html
